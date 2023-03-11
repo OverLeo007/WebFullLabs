@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <script src="static/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <title>JS example</title>
+</head>
+<body>
+<header>
+    <h1>Задания по JS</h1>
+</header>
+<main>
+    <div class="container mt-4 mb-4 text-center records bg-dark text-white custom-container">
+        <div class="row">
+            <div class="col-6 sequence">
+                <h2>Сгенерированная последовательность:</h2>
+                <div class="btn btn-outline-primary" id="rand-sequence">
+                </div>
+            </div>
+            <div class="col-6 inp-sequence">
+                <label for="inp-seq"><h2>Введите последовательность:</h2></label>
+                <input class="btn btn-outline-success" type="text" name="inp-seq" id="inp-seq" autofocus
+                       placeholder="1 2 3 4 5 6">
+            </div>
+        </div>
+        <div class="row  solve" id="solve-1">
+            <div class="col-12 fs-4 solve">
+                9. Вычислить сумму квадратов элементов последовательности.
+            </div>
+            <div class="col-6" id="rand-solve-text-1"></div>
+            <div class="col-6" id="inp-solve-text-1"></div>
+        </div>
+        <div class="row  solve" id="solve-2">
+            <div class="col-12 fs-4 solve">
+                10. Определить среднее арифметическое элементов последовательности.
+            </div>
+            <div class="col-6" id="rand-solve-text-2"></div>
+            <div class="col-6" id="inp-solve-text-2"></div>
+        </div>
+        <div class="row  solve" id="solve-3">
+            <div class="col-12 fs-4 solve">
+                16. Сколько нулей в последовательности?
+            </div>
+            <div class="col-6" id="rand-solve-text-3"></div>
+            <div class="col-6" id="inp-solve-text-3"></div>
+        </div>
+    </div>
+</main>
+</body>
+<script src="static/js/solves.js"></script>
+</html>

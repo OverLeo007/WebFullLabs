@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дербаним DOM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <link href="static/css/index.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid navbar-dark">
+            <a class="navbar-brand" href="#">Взаимодействие с DOM</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container mt-4 mb-4 p-4 records bg-dark text-white">
+        <div class="row">
+            <div class="col-md-10">
+                <h2>Записная книжка</h2>
+            </div>
+            <div class="col-md-2 ml-auto">
+                <button type="button" class="btn btn-outline-success" id="addBtn">Добавить запись</button>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col">
+                <ul class="list-group" id="notebook">
+                </ul>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>
+<script src="static/js/index.js"></script>
+
+</body>
+</html>

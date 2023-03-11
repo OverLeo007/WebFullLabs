@@ -1,0 +1,28 @@
+@import "header"
+@import "main"
+
+body
+  margin: 0
+  padding: 0
+
+html
+
+  background: rgb(0, 212, 255)
+  background: linear-gradient(45deg, rgba(0, 212, 255, 1) 0%, rgba(125, 177, 87, 1) 50%, rgba(0, 212, 255, 1) 100%)
+  background-size: 400% 400%
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-position: 0 0
+  animation: bga-move 20s ease infinite
+
+
+@keyframes bga-move
+  from
+    background-position: 0 50%
+
+  50%
+    background-position: 100% 50%
+
+  to
+    background-position: 0 50%
+

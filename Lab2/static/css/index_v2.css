@@ -1,0 +1,90 @@
+nav>ul {
+    list-style-type: circle;
+}
+
+nav>ol {
+    list-style-type: lower-greek;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+main ul#pluses {
+    list-style-image: url(../img/galka2.png);
+}
+
+main ul#pluses>li{
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    from {opacity: 0.2}
+    50% {opacity: 1}
+    to {opacity: 0.2}
+    
+}
+
+.content {
+    background-color: rgba(0, 255, 255, 0.8);
+    position: relative;
+    width: 80%;
+    flex: 1 0 auto;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 10px;
+    font-family: "DejaVu Sans Mono", monospace;
+    padding: 20px 40px 20px 40px;
+}
+
+.post-box {
+    background-color: rgba(0, 220, 220, 1);
+    padding: 1px 10px 10px;
+    border-radius: 10px;
+}
+
+html {
+    background: rgb(0,212,255);
+    background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(125,177,87,1) 50%, rgba(0,212,255,1) 100%);
+    background-size: 400% 400%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 0;
+    animation: bga-move 20s ease infinite;
+}
+
+@keyframes bga-move {
+    from{ background-position: 0 50% }
+    50% { background-position: 100% 50% }
+    to { background-position: 0 50% }
+}
+
+
+.post-img {
+    width: 60%;
+    border-radius: 10px;
+    margin-right: 100%;
+}
+
+
+.quote {
+    font-family: "Courier", monospace;
+    font-style: italic;
+    padding: 10px 10px 10px 20px;
+    background-color: rgba(0, 128, 128, 0.8);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 90%;
+}
+

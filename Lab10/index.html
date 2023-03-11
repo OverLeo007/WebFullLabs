@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Работаем с формами</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    <link href="static/css/index.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid navbar-dark">
+            <a class="navbar-brand" href="#">Запись на собеседование</a>
+        </div>
+    </nav>
+</header>
+<div class="container rounded mt-4 mb-4 p-4 records bg-dark text-white">
+    <div class="row">
+        <div class="col">
+            <p class="text-info">
+                Товарищ! Предприятие 3826 ищет новых сотрудников!
+                Вы тут, потому что вам выпала возможность попасть на собеседование.
+                Заполните эту простую форму и ожидайте звонка от Академика Сеченова лично!
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container rounded mt-4 mb-4 p-4 records bg-dark text-white">
+    <form id="myForm" action="https://ya.ru" method="GET">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                    <input type="text" id="name" name="name" class="form-control" required
+                           pattern="[а-яА-ЯёЁa-zA-Z]{3,}">
+                    <label class="form-label" for="name">Имя</label>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                    <input type="text" id="surname" name="surname" class="form-control" required
+                           pattern="[а-яА-ЯёЁa-zA-Z]{3,}">
+                    <label class="form-label" for="surname">Фамилия</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-outline mb-4">
+            <input type="text" id="address" name="address" class="form-control" required pattern="[а-яА-ЯёЁa-zA-Z 0-9]{3,}">
+            <label class="form-label" for="address">Адрес</label>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                    <input type="text" id="email" name="email" class="form-control"
+                           required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    <label class="form-label" for="email">Почта</label>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                    <input type="text" id="phone" name="phone" class="form-control"
+                           required
+                           pattern="^\+?[0-9]{1}\s?\(?([0-9]{3})\)?[-\s]?([0-9]{3})[-\s]?([0-9]{2})[-\s]?([0-9]{2})$">
+                    <label class="form-label" for="phone">Номер телефона</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-outline mb-4">
+            <select class="form-select" name='work-group' id="work-group" required>
+                <option value="kiber">Кибернетика - разработка новых роботов</option>
+                <option value="bio">Биоинженерия - прорывные сельхоз культуры</option>
+                <option value="neiro">Нейросети - у истоков нового общества</option>
+            </select>
+            <label class="form-label" for="work-group">Направление деятельности</label>
+        </div>
+        <div class="form-outline mb-4">
+            <textarea class="form-control" id="about" name="about" rows="4"></textarea>
+            <label class="form-label" for="about">О вас</label>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary btn-block mb-4">Отправить заявку</button>
+        <p id="percentage" class="text-info"></p>
+    </form>
+</div>
+<div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="static/img/Logo.png" class="img-fluid" alt="Картинка">
+                    </div>
+                    <div class="col-9 d-flex align-items-center justify-content-center">
+                        <h3 class="text-success">Успех! Ваша заявка отправлена</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+</script>
+<script src="static/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+@import "header"
+
+
+@keyframes color_change
+  from
+    background-color: darkseagreen
+  to
+    background-color: lightgreen
+
+
+div.content
+  background: aquamarine
+  position: absolute
+  margin-top: $height
+  margin-left: 8%
+  width: 80%
+  z-index: 0
+  padding: 2% 2%
+  float: left
+
+  h2.posts-header
+    text-align: center
+
+
+  div.up-button
+    clear: left
+    text-align: center
+    display: block
+
+    a
+      text-decoration: none
+      font-size: 20px
+      padding: 10px
+      border-radius: 10px
+      background-color: darkseagreen
+
+    a:hover
+      animation: color_change 0.2s forwards ease-in
+
+
+
+
+  div.column
+    position: relative
+    float: left
+    $full_width: calc(100% / 3)
+    $margin: 2%
+    width: calc($full_width - 2 * $margin)
+    display: block
+    margin: $margin
+
+    div.post-tab
+      margin-bottom: 10px
+      background-color: darkseagreen
+      width: 100%
+      padding: 4%
+      border-radius: 10px
+
+      h3
+        height: 20%
+        font-size: 100%
+
+      img
+        width: 100%
+        border-radius: 10px
+
+    div.post-tab:hover
+      animation: color_change 0.2s forwards ease-in
+
+
+  div#col-1
+    margin-left: 6px
+
+  div#col-3
+    margin-right: 0
+
+
+
+
+
+

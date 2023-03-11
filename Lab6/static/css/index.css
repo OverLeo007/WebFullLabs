@@ -1,0 +1,17 @@
+body {
+  background-color: #373737;
+  font-family: "Segoe UI", serif;
+  color: lightgray;
+}
+
+h1 {
+  text-align: center;
+}
+
+.col-6, .col-12 {
+  padding: 2%;
+  border: solid 1px #888585;
+  color: lightgray;
+}
+
+/*# sourceMappingURL=index.css.map */

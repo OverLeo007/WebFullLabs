@@ -1,0 +1,140 @@
+header {
+  background-color: aqua;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 10;
+}
+header h1 {
+  font-family: URW Chancery L, cursive;
+}
+header img.logo-img {
+  width: 20%;
+  height: 110px;
+  position: relative;
+  float: left;
+  left: 0;
+  top: 0;
+}
+
+header {
+  background-color: aqua;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  z-index: 10;
+}
+header h1 {
+  font-family: URW Chancery L, cursive;
+}
+header img.logo-img {
+  width: 20%;
+  height: 110px;
+  position: relative;
+  float: left;
+  left: 0;
+  top: 0;
+}
+
+@keyframes color_change {
+  from {
+    background-color: darkseagreen;
+  }
+  to {
+    background-color: lightgreen;
+  }
+}
+div.content {
+  background: aquamarine;
+  position: absolute;
+  margin-top: 110px;
+  margin-left: 8%;
+  width: 80%;
+  z-index: 0;
+  padding: 2% 2%;
+  float: left;
+}
+div.content h2.posts-header {
+  text-align: center;
+}
+div.content div.up-button {
+  clear: left;
+  text-align: center;
+  display: block;
+}
+div.content div.up-button a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: darkseagreen;
+}
+div.content div.up-button a:hover {
+  animation: color_change 0.2s forwards ease-in;
+}
+div.content div.column {
+  position: relative;
+  float: left;
+  width: 29.3333333333%;
+  display: block;
+  margin: 2%;
+}
+div.content div.column div.post-tab {
+  margin-bottom: 10px;
+  background-color: darkseagreen;
+  width: 100%;
+  padding: 4%;
+  border-radius: 10px;
+}
+div.content div.column div.post-tab h3 {
+  height: 20%;
+  font-size: 100%;
+}
+div.content div.column div.post-tab img {
+  width: 100%;
+  border-radius: 10px;
+}
+div.content div.column div.post-tab:hover {
+  animation: color_change 0.2s forwards ease-in;
+}
+div.content div#col-1 {
+  margin-left: 6px;
+}
+div.content div#col-3 {
+  margin-right: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: rgb(0, 212, 255);
+  background: linear-gradient(45deg, rgb(0, 212, 255) 0%, rgb(125, 177, 87) 50%, rgb(0, 212, 255) 100%);
+  background-size: 400% 400%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 0;
+  animation: bga-move 20s ease infinite;
+}
+
+@keyframes bga-move {
+  from {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0 50%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

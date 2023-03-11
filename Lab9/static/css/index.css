@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  background-color: #373b3e;
+}
+
+.note {
+  background-color: #373b3e;
+}
+
+.textarea {
+  width: 100%;
+}
+
+.del-button {
+  float: right;
+}
+
+.saved-note {
+  float: left;
+}
+
+/*# sourceMappingURL=index.css.map */
