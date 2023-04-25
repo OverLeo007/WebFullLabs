@@ -1,0 +1,25 @@
+
+body {
+    margin: 0;
+    /*background-color: #373b3e;*/
+}
+
+
+
+img {
+    width: 40%;
+=
+}
+
+.line {
+    background: white;
+    height: 1px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.custom-container {
+    border: solid 1px white;
+    border-radius: 10px;
+}

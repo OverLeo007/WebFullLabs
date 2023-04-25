@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="static/css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="static/css/index.css" rel="stylesheet">
+    <script src="static/js/bootstrap.js"></script>
+    <title>Add Steam</title>
+
+</head>
+<body>
+<div class="container mt-4 mb-4 text-center records text-white">
+  <div class="row">
+    <div class="col">
+      <h1>Добавь меня в стим</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4>Отправь свои данные мне, чтобы я добавил тебя в Стим</h4>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col">
+            <form id="get-friend-form" name="get-friend-form" method="post">
+                <div class="row gy-2">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" required minlength="9" maxlength="9"
+                               placeholder="Твой код друга в стим">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" minlength="6" placeholder="Твой тэг в дискорд">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="message">Что-нибудь интересное о тебе:</label>
+                        <textarea name="message" id="message" rows="2"
+                                  class="form-control md-textarea" type="text"></textarea>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-1"><input class="btn btn-primary" type="submit"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
